@@ -9,6 +9,8 @@ public class PranchaMove : MonoBehaviour {
 	}
 	
 	void Update () {
-		transform.position =
+
+        Vector3 velocidadeVetorial = Vector3.left * velocidade;
+        transform.position = transform.position + velocidadeVetorial * Time.deltaTime;
 	}
 }
